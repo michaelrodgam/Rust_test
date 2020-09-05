@@ -1,0 +1,20 @@
+//create file hello
+touch hello.rs
+
+//compile rust hello
+rustc hello.rs
+
+//run hello
+./hello
+
+//start new rust project called 'projectName'
+cargo new projectName
+
+//compile project and run it
+cargo run
+
+//just compile the project 
+cargo build
+
+//compile the project for production
+cargo build --release
