@@ -1,5 +1,3 @@
-//create file hello
-touch hello.rs
 
 //compile rust hello
 rustc hello.rs
