@@ -6,5 +6,6 @@ mod print;
 fn main() {
     println!("Start--");
     print::run();
+    print::conditionals();
     println!("--End");
 }
