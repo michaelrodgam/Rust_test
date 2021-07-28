@@ -24,3 +24,43 @@ pub fn conditionals(){
         println!("{}", my_num);
     }
 }
+
+pub fn loops(){
+    let mut i: u32 = 30;
+    while i > 0 {
+        if i % 5 == 0 {
+            println!("This is the {}th loop.", i);
+        }
+        i -= 1;
+    }
+
+    let games = vec!["Hokuto", "Watch Dogs", "Sniper Elite", "Death Stranding"];
+    for g in games.iter(){
+        println!("Im playing: {}.", g);
+    }
+
+    for (index, g) in games.iter().enumerate(){
+        println!("Im playing: {1}, this is index {0}.", index, g);
+    }
+}
+
+#[allow(dead_code)]
+
+pub fn enums_testing(){
+    
+    enum Directions{
+        Up, 
+        Down, 
+        Left, 
+        Right
+    }
+
+    let movement:Directions = Directions::Up;
+
+    match movement{
+        Directions::Up => println!("Move Up"),
+        Directions::Down => println!("Move Down"),
+        Directions::Left => println!("Move L"),
+        Directions::Right => println!("Move R"),
+    }
+}
